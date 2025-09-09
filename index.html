@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles/stylelogin.css">
+    <!-- FontAwesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="card">
+        <h1>Login</h1>
+
+        <form id="loginForm">
+            <!-- Username -->
+            <label for="username">Username:</label>
+            <div class="input-container">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" id="username" placeholder="     example@email.com" required><br><br>
+            </div>
+
+            <!-- Password -->
+            <label for="password">Password:</label>
+            <div class="input-container">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" id="password" placeholder="     Enter your password" required><br><br>   
+            </div>
+
+            <div id="message"></div>
+
+            <button type="submit" id="btn">Login</button>
+        </form>
+    </div>
+
+    <script src="JS/emailCheck.js"></script>
+    <script src="JS/save_data.js"></script>
+    
+</body>
+</html>

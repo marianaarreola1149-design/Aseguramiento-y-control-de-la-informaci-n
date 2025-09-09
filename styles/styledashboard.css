@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    justify-content: center;
+    background: #3a506b;
+    font-family: 'Poppins', sans-serif;
+    padding: 40px 0;
+    margin: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.card {
+    width: 600px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    backdrop-filter: blur(8px);
+}
+
+.card h1 {
+    color: #3a506b;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 700;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+}
+
+.table-container {
+    max-height: 400px;
+    overflow-y: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    animation: fadeIn 1s ease-in-out;
+}
+
+thead {
+    background: linear-gradient(135deg, #3a506b, #5bc0be);
+    color: #fff;
+    font-weight: bold;
+}
+
+thead th {
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: linear-gradient(135deg, #3a506b, #5bc0be); /* repetir por sticky */
+}
+
+tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #333;
+    background: rgba(255, 255, 255, 0.95); 
+}
+
+tbody tr:hover {
+    background: rgba(91, 192, 190, 0.1);
+    transition: 0.3s;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

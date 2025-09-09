@@ -1,0 +1,137 @@
+/* Fondo con imagen + degradado overlay */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, rgba(58, 80, 107, 0.8), rgba(91, 192, 190, 0.7)), url('https://img.freepik.com/vector-gratis/minimo-fondo-montana-azul-estetica_53876-111802.jpg?semt=ais_hybrid&w=740&q=80') no-repeat center center/cover;
+}
+
+/* Tarjeta estilo glassmorphism */
+.card {
+    width: 350px;
+    padding: 40px 30px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animación entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Título */
+.card h1 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 26px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Labels */
+.card label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #fff;
+    text-align: left;
+}
+
+/* Inputs con íconos */
+.input-container {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 8px;
+    padding: 0 12px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    
+}
+
+.input-container i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #555;
+    font-size: 16px;
+}
+
+.input-container input {
+    width: 100%;
+    padding:  0 8px 0 32px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    background: rgba(242, 243, 243, 0.918);
+    flex: 1;
+    transition: all 0.3s ease;
+}
+
+.input-container input:focus {
+    border-color: #5bc0be;
+    box-shadow: 0 0 8px rgba(91, 192, 190, 0.5);
+}
+
+/* Botón */
+.card button {
+    width: 100%;
+    padding: 12px;
+    background: #466181;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card button:hover {
+    background:  #3a506b;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(91, 192, 190, 0.4);
+}
+
+/* Mensajes */
+#message {
+    font-size: 13px;
+    color: #57539c;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+/* Toque Kdrama romántico */
+.kdrama-icon {
+    font-size: 50px;
+    color: #ff758f;
+    margin-bottom: 15px;
+}
+
+.footer-text {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #fff;
+    font-style: italic;
+}
